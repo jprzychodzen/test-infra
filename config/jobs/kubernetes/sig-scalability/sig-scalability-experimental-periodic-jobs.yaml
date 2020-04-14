@@ -305,9 +305,9 @@ periodics:
           - --check-leaked-resources
           # TODO(oxddr): remove once debugging is finished
           - --env=KUBEPROXY_TEST_LOG_LEVEL=--v=4
-          - --cluster=e2e-big-containerd
           - --env=KUBE_CONTAINER_RUNTIME=containerd
-          - --env=LOG_DUMP_SYSTEMD_SERVICES=containerd
+          - --env=LOG_DUMP_SAVE_SERVICES=containerd
+          - --cluster=e2e-big-containerd
           - --extract=ci/latest
           - --gcp-node-image=gci
           - --gcp-nodes=100
